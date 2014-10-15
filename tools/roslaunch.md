@@ -34,3 +34,13 @@ ROS_NAMESPACE=/camera /opt/ros/hydro/lib/nodelet/nodelet load openni2_camera/Ope
 $ roslaunch openni2_launch openni2.launch --args /camera/driver | bash
 $ gdb --args $(roslaunch openni2_launch openni2.launch --args /camera/driver)
 ```
+
+### gdbつきで立ち上げる
+* ターミナルを分離するためにxterm越しに立ち上げる
+* `launch-prefix`をnodeタグに追加する
+```xml
+<node pkg="foo" type="bar" name="foobar"
+      launch-prefix="xterm -e gdb --args">
+...
+</node>
+```
