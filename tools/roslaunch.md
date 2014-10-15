@@ -8,7 +8,20 @@ roslaunch
 
 ### ノード一覧の取得
 ```sh
-$ roslaunch hoge_pkg fuga.launch --nodes
+$ roslaunch openni2_launch openni2.launch --nodes
+/camera/camera_nodelet_manager
+/camera/driver
+/camera/rectify_color
+/camera/depth_rectify_depth
+/camera/depth_metric_rect
+/camera/depth_metric
+/camera/depth_points
+/camera/register_depth_rgb
+/camera/points_xyzrgb_sw_registered
+/camera_base_link
+/camera_base_link1
+/camera_base_link2
+/camera_base_link3
 ```
 
 * grepと組み合わせて
