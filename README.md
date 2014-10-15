@@ -1,7 +1,7 @@
 ros-tips
 ========
 
-tips for ROS
+tips for ROS. ちょっとマイナーなノウハウとか
 
 1. tools
  1. [roslaunch](tools/roslaunch.md)
